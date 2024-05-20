@@ -1,1 +1,3 @@
 # Fit-Check-2.0
+
+This is a POC for a personal project that explores how we can take easily-accessible image data from the internet and use it to draw conclusions that can help inform us. One of my interests is fashion, so I decided to scrape images from https://www.firstview.com/, which is a website that maintains images from most runway collections going back as far as 1989. Using Meta's SAM model, I extracted the clothing from these images, using the OpenCV library to manipulate the masks as needed. I then used scikit-learn's KMeans clustering algorithm to extract the top 10 colors from each collection. Using Delta E differences, I was able to quantify differences in collections in a way that is meaningful to the human eye. 
